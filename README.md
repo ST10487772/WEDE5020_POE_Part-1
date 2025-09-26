@@ -106,7 +106,7 @@ Image sizing is fully responsive (percentage-based) for optimal display across d
 All hyperlinks between pages are functional and tested. 
 
 GitHub Repository: 
- https://github.com/ST10487772/WEDE5020_POE_Part-1 
+https://github.com/ST10487772/WEDE5020_POE_Part-1 
 
 Reference List: 
 
