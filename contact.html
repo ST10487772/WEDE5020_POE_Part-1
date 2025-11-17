@@ -3,61 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Sunrise Laundry</title>
+  <title>Contact Us | Sunrise Laundry Services</title>
+  <meta name="description" content="Contact Sunrise Laundry Services for bookings, enquiries, and pickup & delivery. Find our location on the map.">
+  <meta name="keywords" content="contact Sunrise Laundry, pickup booking, laundry contact, Savanna City laundry contact">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-   <!-- Header -->
-   <header align="middle">
-    <img src="images/Image Aug 22, 2025, 11_07_57 PM.png" alt="logo" height="500" width="1000" />
+  <header align="middle">
+    <img src="images/Image Aug 22, 2025, 11_07_57 PM.png" alt="Sunrise Laundry logo"  class="responsive-img" />
     <h1>Sunrise Laundry Services</h1>
     <p>Fast • Affordable • Professional</p>
   </header>
 
-  <!-- Navigation -->
   <nav align="middle">
     <a href="index.html">Home</a> |
     <a href="about.html">About</a> |
     <a href="services.html">Services</a> |
     <a href="pricing.html">Pricing</a> |
     <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact</a> |
+    <a href="enquiries.html">Enquiries</a>
   </nav>
 
-  <h1>Contact Us - Sunrise Laundry</h1>
+  <main>
+    <h2 style="text-align:center;">Contact & Booking</h2>
 
-  <p><strong>Address:</strong> 7509 San Siro cres Street,Savanna City </p>
-  <p><strong>Phone:</strong> +27 12 345 6789</p>
-  <p><strong>Email:</strong> info@sunriselaundry.com</p>
+    <section style="max-width:900px; margin:0 auto;">
+      <p><strong>Address:</strong> 7509 San Siro Crescent, Savanna City</p>
+      <p><strong>Phone:</strong> +27 12 345 6789</p>
+      <p><strong>Email:</strong> info@sunriselaundry.com</p>
 
-  <!-- Header -->
-  <header align="middle">
-    <h1>Contact & Booking</h1>
-  </header>
+      <!-- Map -->
+      <section id="map-section" style="margin:1rem 0;">
+        <h3>Our Location</h3>
 
-  <!-- Contact Form -->
-  <div align="middle">
-    <h2>Get in Touch</h2>
-    <form>
-      <label>Name:</label><br />
-      <input type="text" required /><br />
+        <!-- ✅ FIXED GOOGLE MAP EMBED -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3424.356346889892!2d27.8963088!3d-26.5043005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e945541b24e787d%3A0x2968052952b54e4a!2sSavanna%20City%2C%202018!5e0!3m2!1sen!2za!4v1700000000000"
+          width="100%" 
+          height="360" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
 
-      <label>Email:</label><br />
-      <input type="email" required /><br />
+      <!-- Contact Form -->
+      <section class="contact-form" aria-labelledby="contactHeading">
+        <h3 id="contactHeading">Get in Touch</h3>
+        <form id="contactForm" action="#" method="post" novalidate>
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" name="name" required>
+          <div class="error-message" aria-live="polite"></div>
 
-      <label>Service Required:</label><br />
-      <input type="text" required /><br />
+          <label for="contact-email">Email Address</label>
+          <input type="email" id="contact-email" name="email" required>
+          <div class="error-message" aria-live="polite"></div>
 
-      <label>Message:</label><br />
-      <textarea rows="5"></textarea><br />
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" required>
+          <div class="error-message" aria-live="polite"></div>
 
-      <button type="submit">Send Booking</button>
-    </form>
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required></textarea>
+          <div class="error-message" aria-live="polite"></div>
 
-  <!-- Footer -->
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
   <footer align="middle">
-    <p>&copy; 2025 Sunrise Laundry Services</p>
-    &trade; Sunrise Laundry.
+    <p>&copy; 2025 Sunrise Laundry Services | All Rights Reserved</p>
+    <p>&trade; Sunrise Laundry.</p>
+  </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

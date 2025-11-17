@@ -3,49 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - Sunrise Laundry Services</title>
+  <title>Gallery | Sunrise Laundry Services</title>
+  <meta name="description" content="View Sunrise Laundry Services in action — washing, ironing, delivery and neatly folded garments.">
+  <meta name="keywords" content="laundry gallery, washing photos, ironing photos, laundry delivery photos">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* LIGHTBOX (Image Full View) */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 35px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Gallery styling */
+    .gallery img {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header align="middle">
-    <img src="images/Image Aug 22, 2025, 11_07_57 PM.png" alt="logo" height="150"/>
+    <img src="images/Image Aug 22, 2025, 11_07_57 PM.png" alt="Sunrise Laundry logo"  class="responsive-img" />
     <h1>Sunrise Laundry Services</h1>
     <p>Fast • Affordable • Professional</p>
   </header>
 
-  <!-- Navigation -->
   <nav align="middle">
     <a href="index.html">Home</a> |
     <a href="about.html">About</a> |
     <a href="services.html">Services</a> |
     <a href="pricing.html">Pricing</a> |
     <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact</a> |
+    <a href="enquiries.html">Enquiries</a>
   </nav>
 
-  <!-- Gallery Section -->
   <main>
-    <h2 align="middle">Our Work in Action</h2>
-    <p align="middle">Take a look at how Sunrise Laundry brings freshness and care to every garment.</p>
+    <h2 style="text-align:center;">Our Work in Action</h2>
+    <p style="text-align:center;">Take a look at how Sunrise Laundry brings freshness and care to every garment.</p>
 
-    <div align="middle">
-      <img src="images/Top_Shape_1.jpeg" alt="Washing clothes" width="500"><br>
-      <p>Expert washing with eco-friendly detergents.</p>
-      <img src="images/Ironing clothes.webp" alt="Ironing clothes" width="500"><br>
-      <p>Professional ironing for crisp, wrinkle-free clothes.</p>
-      <img src="images/Laundry delivery.jpeg" alt="Laundry delivery" width="500"><br>
-      <p>Convenient pickup and delivery to your doorstep.</p>
-      <img src="images/Neatly folded clothes.jpg" alt="Neatly folded clothes" width="500"><br>
-      <p>Neatly folded laundry ready for storage.</p>
+    <div class="gallery" style="justify-content:center; align-items:flex-start;">
+      <figure>
+        <img src="images/Top_Shape_1.jpeg" alt="Washing clothes" loading="lazy" class="full-view">
+        <figcaption>Expert washing with eco-friendly detergents.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Ironing clothes.webp" alt="Ironing clothes" loading="lazy" class="full-view">
+        <figcaption>Professional ironing for crisp, wrinkle-free clothes.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Laundry delivery.jpeg" alt="Laundry delivery" loading="lazy" class="full-view">
+        <figcaption>Convenient pickup and delivery to your doorstep.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/Neatly folded clothes.jpg" alt="Neatly folded clothes" loading="lazy" class="full-view">
+        <figcaption>Neatly folded laundry ready for storage.</figcaption>
+      </figure>
     </div>
+
+    <p style="text-align:center; font-size:0.95rem; color:#333;">Click any image to enlarge.</p>
   </main>
 
-  <!-- Footer -->
+  <!-- LIGHTBOX POPUP -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img id="lightbox-img" src="" alt="Full View">
+  </div>
+
   <footer align="middle">
     <p>&copy; 2025 Sunrise Laundry Services | All Rights Reserved</p>
-    &trade; Sunrise Laundry.
+    <p>&trade; Sunrise Laundry.</p>
   </footer>
+
+  <script>
+    // Lightbox Functionality
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.getElementById("closeBtn");
+
+    document.querySelectorAll(".full-view").forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
 
 </body>
 </html>
