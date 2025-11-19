@@ -1,124 +1,235 @@
-ST10487772_Unathi_Lahliwe
-
 Sunrise Laundry Services Website 
 
-Project Overview 
+Student Name: Unathi Lahliwe 
+Student Number: ST10487772 
 
-The Sunrise Laundry Services Website is a responsive, user-friendly platform developed to establish an online presence for Sunrise Laundry. 
- It provides customers with convenient access to company information, services, pricing, and a contact page with form functionality. 
+1. Project Overview 
 
-This project highlights the business’s offerings, including washing and folding, ironing, dry cleaning, pickup and delivery, and business laundry solutions. 
+The Sunrise Laundry Services Website is a responsive and user-friendly website created to provide an online presence for Sunrise Laundry. 
+The site allows customers to view services, pricing, gallery images, and submit enquiries or contact forms. 
 
-The website consists of the following pages: 
+The website highlights the main business offerings, including: 
 
-Home – Welcome message and hero image 
+Washing & Folding 
 
-About Us – Company history, mission, and vision 
+Ironing 
 
-Services – Detailed description of all services offered 
+Dry Cleaning 
 
-Pricing – List of services and transparent pricing 
+Pickup & Delivery 
 
-Gallery – Sample images of services 
+Business Laundry Solutions 
 
-Contact – Contact form with company details 
+The website is fully functional, well-styled, and mobile-friendly. 
 
-Enquiries – Enquiry submission form for customer questions and feedback 
+2. Pages Included 
 
-Features 
+Home: Welcome message + hero image 
 
-Responsive Design – Developed with HTML5 and CSS3, adaptable to desktops, tablets, and mobile devices. 
+About Us: Company story, mission, vision, values 
 
-Navigation Bar – Provides quick and consistent access to all pages. 
+Services: All services listed + live search filter 
 
-Home Page – Includes a hero section with a welcome message and call-to-action. 
+Pricing: Clear pricing table 
 
-About Us Page – Outlines the company’s history, mission, and vision. 
+Gallery: Images with working lightbox 
 
-Services Page – Explains laundry, dry cleaning, ironing, pickup and delivery, and business solutions. 
+Contact: Contact form + Google Map embed 
 
-Pricing Page – Transparent list of services and special offers. 
+Enquiries: Form for customer questions and feedback 
 
-Gallery Page – Displays sample images of work and services. 
+3. Key Features 
 
-Contact Page – Contains a functional contact form and business details. 
+Responsive Design 
 
-Enquiries Page – Dedicated form for customer queries, feedback, and suggestions. 
+Works on desktops, tablets, and mobile devices. 
 
-Improvements 
+Use CSS3 media queries and percentage-based image scaling. 
 
-Converted all images from fixed pixel values to percentage-based responsive sizing. 
+Navigation Bar 
 
-Standardized styling across all pages, ensuring uniform fonts, colors, and layout. 
+It appears on every page. 
 
-Enhanced responsiveness across desktop, tablet, and mobile screens. 
+Provides consistent access to all sections. 
 
-Applied a consistent navigation bar and footer throughout all pages. 
+Gallery Lightbox  
 
-Refinements 
+Users can click images to view them in full screen. 
 
-Added enquiries.html with a styled enquiry form to improve customer communication. 
+Close by clicking outside the image or pressing ESC. 
 
-Improved form accessibility by including labels and required input fields. 
+Fully implemented in script.js. 
 
-Optimized gallery images for improved loading speed. 
+Contact & Enquiries Forms 
 
-Applied CSS max-width constraints to maintain proportional image scaling. 
+Both forms now include: 
 
-Improved text readability by refining spacing, alignment, and hover effects. 
+Required field validation 
 
-Changelog 
+Email format checks 
 
-v1.0 (Initial Release): Project structure created with index, about, services, pricing, gallery, and contact pages. 
+Error messages 
 
-v1.1: Linked all pages with a navigation bar and consistent footer. 
+Success confirmation 
 
-v1.2: Converted all images to responsive percentage-based sizing. 
+Validation is handled via JavaScript. 
 
-v1.3: Added enquiries.html with a styled enquiry form. 
+Google Map Integration 
 
-v1.4 (Final Refinement): Completed styling consistency, enhanced responsiveness, and updated documentation. 
+A clean, embedded map showing Savanna City location. 
 
-Technologies Used 
+Services Search Filter  
 
-Frontend: HTML5, CSS3 
+Users can type in a search bar to filter listed services live. 
 
-Editor: Visual Studio Code 
+Styling Improvements  
 
-Responsive Design: Percentage-based image scaling with CSS
+Fully updated CSS: 
 
-How to View the Website 
+Uniform fonts, spacing, and colors 
 
-Download or clone the project folder. 
+Enhanced readability 
 
-Ensure that all HTML files, the CSS file, and the images/ folder are in the same directory. 
+Responsive images with max-width rules 
 
-Open the folder and double-click index.html to launch the homepage in your default browser. 
+Hover animations and transitions 
 
-Navigate through the remaining pages using the navigation bar. 
+Consistent layout on all pages 
 
-Notes 
+ 
 
-All images are stored in the images/ folder. 
+4. Improvements  
 
-Image sizing is fully responsive (percentage-based) for optimal display across devices. 
+Lightbox for Gallery 
 
-All hyperlinks between pages are functional and tested. 
+Images now open in a Fullscreen overlay for better viewing. 
 
-GitHub Repository: 
-https://github.com/ST10487772/WEDE5020_POE_Part-1 
+Enhanced Forms 
 
-Reference List: 
+Added: 
 
-W3Schools (2025). HTML, CSS, and JavaScript Tutorials. Available at: https://www.w3schools.com/html/default.asp (Accessed: 23 September 2025). 
+Error message handling 
 
-Creative Commons (2025). Free-to-use images and icons. Available at: https://creativecommons.org/ (Accessed: 23 September 2025). 
+Required field validation 
 
-HubSpot (2024). Small Business Website Best Practices. Available at: https://blog.hubspot.com/marketing/small-business-website/ (Accessed: 23 September 2025). 
+Email regex checking 
 
-Mozilla Developer Network (MDN) (2025). HTML Reference. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/ (Accessed: 23 September 2025). 
+Success alert , button state feedback 
 
-Google Developers (2025). Search Engine Optimization (SEO) Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide/ (Accessed: 23 September 2025). 
+Better Responsiveness 
+
+Improved mobile design. 
+
+Optimized image scaling. 
+
+Adjusted layout for smaller screens. 
+
+JavaScript Upgrades 
+
+Lightbox functionality 
+
+Search box for services 
+
+Shared form validation function for both forms 
+
+HTML & CSS Clean-Up 
+
+Organized code 
+
+Removed inconsistent spacing 
+
+Standardized structure and styling across all pages 
+
+ 
+
+5. Technologies Used 
+
+HTML5 – Structure of the website 
+
+CSS3 – Styling and responsive layout 
+
+JavaScript – Lightbox, form validation, and search filter 
+
+Google Maps Embed – Location display 
+
+Visual Studio Code – Development environment 
+
+ 
+
+6. Folder Structure 
+
+Sunrise-Laundry-Website/ 
+│ 
+├── index.html 
+├── about.html 
+├── services.html 
+├── pricing.html 
+├── gallery.html 
+├── contact.html 
+├── enquiries.html 
+│ 
+├── css/ 
+│   └── style.css 
+│ 
+├── js/ 
+│   └── script.js 
+│ 
+├── images/ 
+│   └── all the images used in the website 
+│ 
+└── README.md 
+ 
+
+ 
+
+7. How to View the Website 
+
+Download or clone the repository. 
+
+Ensure the folder includes all HTML files, css/, js/, and images/ directories. 
+
+Open index.html in your browser. 
+
+Navigate using the top menu. 
+
+8. Changelog 
+
+General Website Improvements 
+
+Improved layout for all pages for better readability and user experience. 
+
+Improved responsiveness across mobile, tablet, and desktop. 
+
+Updated SEO metadata on all pages: 
+
+<title> tags 
+
+<meta description> 
+
+<meta keywords> 
+
+Added “Sunrise Laundry Services” branding across all pages. 
+
+GitHub Repository Link 
+
+https://github.com/ST10487772/WEDE5020_POE_Part-1  
+
+9. References List: 
+
+W3Schools (2025). HTML, CSS, and JavaScript Tutorials. 
+https://www.w3schools.com/html/default.asp 
+
+Creative Commons (2025). Free-to-use images and icons. 
+https://creativecommons.org/ 
+
+HubSpot (2024). Small Business Website Best Practices. 
+https://blog.hubspot.com/marketing/small-business-website 
+
+Mozilla Developer Network (MDN) (2025). HTML Reference. 
+https://developer.mozilla.org/en-US/docs/Web/HTML 
+
+Google Developers (2025). SEO Starter Guide. 
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide 
 
  
     
